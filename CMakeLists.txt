@@ -11,6 +11,9 @@ set(VERSION_MAJOR 0)
 set(VERSION_MINOR 0)
 set(VERSION_PATCH 0)
 
+include(cmake/macro.cmake)
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules;${CMAKE_SOURCE_DIR}")
+
 
 # add the  header path
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/src)
